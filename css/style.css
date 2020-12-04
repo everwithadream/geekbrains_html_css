@@ -276,7 +276,9 @@ p {
 .review-item-author {
   font-style: normal;
   color: #989898;
-  line-height: 29px;
+  width: 100%;
+  margin: 5px 0 0 0;
+  display: block;
 }
 .prices {
   padding: 50px;
@@ -311,35 +313,45 @@ p {
 .prices-item {
   width: 300px;
   margin: 0 45px 0 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #445162;
   border-radius: 10px;
+  border: 2px solid #445162;
+  padding: 0 0 10px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .prices-item:nth-child(4) {
   margin: 0;
 }
 .prices-item-title {
   font-size: 24px;
-  line-height: 50px;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
   margin: 0;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .prices-item-price {
   font-size: 40px;
-  line-height: 70px;
   font-weight: 400;
   color: #445162;
   text-align: center;
   display: block;
   background-color: #ffffff;
-  width: 99%;
-  margin: auto;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .prices-item-list {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-position: inside;
 }
 .prices-item-list-item {
   font-size: 16px;
@@ -351,9 +363,7 @@ p {
 }
 .prices-item-button {
   width: 260px;
-  min-height: 40px;
   background-color: #ffffff;
-  margin: 0 20px 20px 20px;
   border-radius: 5px;
   font-size: 18px;
   line-height: 18px;
@@ -361,6 +371,11 @@ p {
   color: #445161;
   padding: 0;
   border: 0px;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
 }
 .footer {
   padding-top: 50px;
@@ -404,7 +419,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 75px;
+  margin: 0 75px 50px 0;
 }
 .footer-form-input {
   font-size: 16px;
@@ -466,7 +481,6 @@ p {
 }
 .footer-form-submit {
   width: 140px;
-  min-height: 40px;
   background-color: #ffffff;
   font-family: Arial;
   font-size: 16px;
@@ -476,7 +490,18 @@ p {
   color: #445162;
   border-radius: 5px;
   border: 0px;
-  margin-bottom: 50px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.prices-item-button:hover,
+.footer-form-submit:hover {
+  background-color: #a8a8a8;
+}
+.prices-item-button:active,
+.footer-form-submit:active {
+  background-color: #5a5a5a;
+  color: #ffffff;
 }
 .footer-links {
   display: -webkit-box;
@@ -488,7 +513,10 @@ p {
           flex-direction: column;
 }
 .footer-links-list {
-  padding-left: 30px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
 }
 .footer-links-list-item {
   font-size: 16px;
@@ -498,7 +526,10 @@ p {
   color: #ffffff;
   list-style-type: none;
   position: relative;
-  margin-bottom: 22px;
+  margin: 0 0 22px 0;
+  padding: 0 0 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .footer-links-list-item:nth-child(1)::before {
   background-image: url(../img/skype_icon.png);
@@ -539,6 +570,15 @@ p {
   background-size: cover;
   position: absolute;
   left: -30px;
+}
+.footer-links-list-item:nth-child(1)::before,
+.footer-links-list-item:nth-child(2)::before,
+.footer-links-list-item:nth-child(3)::before,
+.footer-links-list-item:nth-child(4)::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
 }
 .footer-links-social {
   display: -webkit-box;
